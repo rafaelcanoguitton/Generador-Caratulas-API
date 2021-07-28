@@ -26,7 +26,15 @@ The request can be made in any order, simply follow these set of rules:
 
 Otherwise the API will give a `403 BAD REQUEST` response.
 
-The aformentioned request will return a token like this `W2537V67` and you can use it to retrieve the cover at '/retornar_caratula/**token**'.
+The aformentioned request will return a token like this `W2537V67` and you can use it to retrieve the cover with a get request at '/retornar_caratula/**token**'.
+
+## URLS
+
+The urls for the requests are the following:
+
+- `https://generador-caratulas-ucsp-api.herokuapp.com/` For the first request.
+
+- `https://generador-caratulas-ucsp-api.herokuapp.com/retornar_caratula/ `For the second request.
 
 ## Example
 
