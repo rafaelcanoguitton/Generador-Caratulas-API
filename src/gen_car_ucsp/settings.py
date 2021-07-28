@@ -25,7 +25,7 @@ SECRET_KEY = 'django-insecure--muh7#8devw1#f^t+o*4rw++(=7^b@nnch$(!eiv1zdx9j9s=4
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ['generador-caratulas-ucsp-api.herokuapp.com']
 
 
 # Application definition
