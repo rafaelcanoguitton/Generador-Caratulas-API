@@ -42,7 +42,6 @@ def index(request):
                 sems='9no semestre'
             else:
                 sems='10mo semestre'
-            print(carrera,titulo,curso,sems,alumnos)
             caratula=generar_pdf(carrera,titulo,curso,sems,alumnos)
             return HttpResponse(caratula
             ,status=200)
