@@ -39,3 +39,9 @@ The urls for the requests are the following:
 ## Example
 
 ![](ex_cover.png)
+
+## Currently used by
+
+- [botUCSP](https://github.com/rafaelcanoguitton/botUCSP)
+
+- [rafxarBOT](https://github.com/rafaelcanoguitton/rafxarBOT)
