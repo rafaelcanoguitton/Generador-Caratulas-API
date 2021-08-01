@@ -3,13 +3,13 @@ from django.http import HttpResponse
 from django.views.decorators.csrf import csrf_exempt
 from generador.generador import generar_pdf
 from django.http import FileResponse
-import json
-#a function that returns a random string of length n
+import json#a function that returns a random string of length n
 @csrf_exempt
 def index(request):
     try:
         body=json.loads(request.body)
-    except:
+    except Exception as e:
+        print(e)
         return HttpResponse("Por favor haz un request post con el body correcto :)",status=403) 
     if request.method=='POST' and len(body)==5:
         try:
@@ -45,7 +45,8 @@ def index(request):
             caratula=generar_pdf(carrera,titulo,curso,sems,alumnos)
             return HttpResponse(caratula
             ,status=200)
-        except:
+        except Exception as e:
+            print(e)
             return HttpResponse("Por favor haz un request post con el body correcto :)",status=403)
     return HttpResponse("Por favor haz un request post con el body correcto :)",status=403)
 
