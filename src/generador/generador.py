@@ -44,6 +44,8 @@ def generar_pdf(carrera, titulo, curso, semestre, alumnos):
     grosor = 40
     if(count > 4):
         grosor = 30
+    elif(count==6):
+        grosor=25
     space = (pdf_w-(count*grosor))/(count+1)
     pdf.set_font(family='Arial', size=18)
     for i in range(0, count):
